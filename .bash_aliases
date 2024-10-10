@@ -17,7 +17,7 @@ alias lo='exit'
 # vim aliases
 alias :e='nvim'
 alias vi='nvim'
-alias vim='nvim'
+#alias vim='nvim'
 
 # search the man pages (it's a little slow)
 alias fman='compgen -c | fzf | xargs man'
