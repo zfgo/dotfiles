@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "copying dotfiles"
+echo "copying dotfiles to dotfiles repo"
 
-cp -r ~/.config/nvim/ ~/dotfiles
-cp ~/.bash* ~/dotfiles
-cp ~/.gitconfig ~/dotfiles
-cp ~/.vimrc ~/dotfiles
-cp ~/.vimrc ~/dotfiles
-cp ~/.viminfo ~/dotfiles
+cp -rf ~/.config/nvim/ ./.config
+rm -rf ./.config/nvim/.git/
+cp ~/.bash* .
+cp ~/.gitconfig .
+cp ~/.vimrc .
+cp ~/.viminfo .
 
 echo "done, bitch"
